@@ -27,7 +27,24 @@
                                                 "description": "Allow ICMPv6",
                                                 "log": "enable",
                                                 "protocol": "icmpv6"
-                                        }
+                                        },
+                                        "10": {
+                                                "action": "accept",
+                                                "description": "Allow Inbound FaceTime TCP IPv6 Ports",
+                                                "destination": {
+                                                        "port": "80,443,5223"
+                                                },
+                                                "log": "enable",
+                                                "protocol": "tcp"
+                                        },
+                                        "11": {
+                                                "action": "accept",
+                                                "description": "Allow Inbound FaceTime UDP IPv6 Ports",
+                                                "destination": {
+                                                        "port": "3478-3497,16384-16387,16393-16402"
+                                        },
+                                                "log": "enable",
+                                                "protocol": "udp"
                                 }
                         },
                         "wan_local-6": {
@@ -67,6 +84,24 @@
                                                 "source": {
                                                         "port": "547"
                                                 }
+                                        },
+                                        "10": {
+                                                "action": "accept",
+                                                "description": "Allow Inbound FaceTime TCP IPv6 Ports",
+                                                "destination": {
+                                                        "port": "80,443,5223"
+                                                },
+                                                "log": "enable",
+                                                "protocol": "tcp"
+                                        },
+                                        "11": {
+                                                "action": "accept",
+                                                "description": "Allow Inbound FaceTime UDP IPv6 Ports",
+                                                "destination": {
+                                                        "port": "3478-3497,16384-16387,16393-16402"
+                                        },
+                                                "log": "enable",
+                                                "protocol": "udp"
                                         }
                                 }
                         }
